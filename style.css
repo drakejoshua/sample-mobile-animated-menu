@@ -1,0 +1,75 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: black;
+    color: white;
+}
+nav > span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+nav > button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 6px) rotate(-45deg);
+}
+/* Fade out the second bar */
+.change .bar2 { opacity: 0; }
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+div#dropdown {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+div#dropdown > div {
+    margin-top: 30px;
+}
+div#dropdown > div > a {
+    display: block;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+h1 {
+    padding: 0px 60px;
+    text-transform: capitalize;
+}
